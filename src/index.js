@@ -43,7 +43,12 @@ export const assignLockedValues = (object, propertyName) => {
     if (obj[propertyName] === undefined) {
         obj[propertyName] = null;
     }
-    Object.defineProperty(obj, propertyName, { value: obj[propertyName], writable: false, enumerable: true, configurable: true });
+    Object.defineProperty(obj, propertyName, {
+        value: obj[propertyName],
+        writable: false,
+        enumerable: true,
+        configurable: true
+    });
     return obj;
 };
 
