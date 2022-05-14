@@ -16,7 +16,7 @@ export const getKeysByDescriptor = (object, descriptor) => {
             array.push(key);
         }
     }
-    return array;
+return array;
 };
 
 /**
